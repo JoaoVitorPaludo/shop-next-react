@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-
-  experimental: {
-   
+  images: {
+    remotePatterns: [
+      {
+        hostname: "files.stripe.com",
+      },
+    ],
   },
 };
 
